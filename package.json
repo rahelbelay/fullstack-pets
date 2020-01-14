@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "db:delete": "dropdb fullstack-pets",
     "db:create": "createdb fullstack-pets",
     "db:schema": "psql -f schema.sql fullstack-pets",
@@ -15,6 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "pg-promise": "^10.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
